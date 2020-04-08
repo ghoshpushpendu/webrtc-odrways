@@ -30,8 +30,8 @@ const handleRequest = function(request, response) {
   }
 };
 
-const httpsServer = https.createServer(serverConfig, handleRequest);
-httpsServer.listen(HTTPS_PORT, '0.0.0.0');
+const httpsServer = https.createServer();
+httpsServer.listen(HTTPS_PORT);
 
 // ----------------------------------------------------------------------------------------
 
